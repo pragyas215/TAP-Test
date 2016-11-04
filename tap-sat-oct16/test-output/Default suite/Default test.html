@@ -1,0 +1,559 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/11</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Nov 04 15:44:46 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>46 seconds (46791 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.Start_Test_Session()'><b>Start_Test_Session</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+29	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.4
+1478254488431	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1478254488432	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1478254488432	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1478254488433	addons.xpi	DEBUG	Calling bootstrap method startup on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 8.3.0.9150
+1478254488444	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1478254488445	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1478254488445	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1478254488445	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1478254488445	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1478254488446	addons.manager	DEBUG	Starting provider: GMPProvider
+1478254488454	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1478254488454	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1478254488454	addons.manager	DEBUG	Starting provider: PluginProvider
+1478254488455	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1478254488455	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1478254488456	addons.manager	DEBUG	Completed startup sequence
+1478254489580	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1478254489581	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1478254489581	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1478254490131	DeferredSave.extensions.json	DEBUG	Write succeeded
+1478254490131	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1478254490131	DeferredSave.extensions.json	DEBUG	Starting timer
+1478254490144	addons.repository	DEBUG	No addons.json found.
+1478254490145	DeferredSave.addons.json	DEBUG	Save changes
+1478254490149	DeferredSave.addons.json	DEBUG	Starting timer
+1478254490218	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1478254490218	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1478254490218	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1478254490223	DeferredSave.extensions.json	DEBUG	Starting write
+1478254490224	DeferredSave.addons.json	DEBUG	Starting write
+1478254490270	DeferredSave.extensions.json	DEBUG	Write succeeded
+1478254490274	DeferredSave.addons.json	DEBUG	Write succeeded
+1478254501252	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.3
+1478254501255	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.4
+1478254501260	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.0
+1478254501260	addons.xpi	DEBUG	Calling bootstrap method shutdown on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 8.3.0.9150
+[Child 3056] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1478254501504	addons.manager	DEBUG	shutdown
+1478254501504	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1478254501504	addons.xpi	DEBUG	shutdown
+1478254501504	addons.xpi-utils	DEBUG	shutdown
+1478254501505	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1478254501505	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1478254501508	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1478254501509	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1478254501510	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1478254501513	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1478254501516	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;ASDP1513PO01976&apos;, ip: &apos;10.0.31.248&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:125)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:124)
+	at com.qait.automation.WebDriverFactory.getFirefoxDriver(WebDriverFactory.java:96)
+	at com.qait.automation.WebDriverFactory.getDriver(WebDriverFactory.java:31)
+	at com.qait.automation.TestSessionInitiator._configureBrowser(TestSessionInitiator.java:78)
+	at com.qait.automation.TestSessionInitiator.testInitiator(TestSessionInitiator.java:73)
+	at com.qait.automation.TestSessionInitiator.&lt;init&gt;(TestSessionInitiator.java:68)
+	at com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.Start_Test_Session(TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+29	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.4
+1478254488431	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1478254488432	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1478254488432	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1478254488433	addons.xpi	DEBUG	Calling bootstrap method startup on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 8.3.0.9150
+1478254488444	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1478254488445	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1478254488445	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1478254488445	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1478254488445	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1478254488446	addons.manager	DEBUG	Starting provider: GMPProvider
+1478254488454	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1478254488454	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1478254488454	addons.manager	DEBUG	Starting provider: PluginProvider
+1478254488455	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1478254488455	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1478254488456	addons.manager	DEBUG	Completed startup sequence
+1478254489580	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1478254489581	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1478254489581	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1478254490131	DeferredSave.extensions.json	DEBUG	Write succeeded
+1478254490131	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1478254490131	DeferredSave.extensions.json	DEBUG	Starting timer
+1478254490144	addons.repository	DEBUG	No addons.json found.
+1478254490145	DeferredSave.addons.json	DEBUG	Save changes
+1478254490149	DeferredSave.addons.json	DEBUG	Starting timer
+1478254490218	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1478254490218	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1478254490218	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1478254490223	DeferredSave.extensions.json	DEBUG	Starting write
+1478254490224	DeferredSave.addons.json	DEBUG	Starting write
+1478254490270	DeferredSave.extensions.json	DEBUG	Write succeeded
+1478254490274	DeferredSave.addons.json	DEBUG	Write succeeded
+1478254501252	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.3
+1478254501255	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.4
+1478254501260	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.0
+1478254501260	addons.xpi	DEBUG	Calling bootstrap method shutdown on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 8.3.0.9150
+[Child 3056] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1478254501504	addons.manager	DEBUG	shutdown
+1478254501504	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1478254501504	addons.xpi	DEBUG	shutdown
+1478254501504	addons.xpi-utils	DEBUG	shutdown
+1478254501505	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1478254501505	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1478254501508	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1478254501509	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1478254501510	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1478254501513	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1478254501516	addons.manager	DEBUG	Async provider shutdown done
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	... 36 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace821576394", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace821576394'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+29	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.4
+1478254488431	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1478254488432	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1478254488432	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1478254488433	addons.xpi	DEBUG	Calling bootstrap method startup on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 8.3.0.9150
+1478254488444	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1478254488445	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1478254488445	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1478254488445	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1478254488445	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1478254488446	addons.manager	DEBUG	Starting provider: GMPProvider
+1478254488454	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1478254488454	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1478254488454	addons.manager	DEBUG	Starting provider: PluginProvider
+1478254488455	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1478254488455	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1478254488456	addons.manager	DEBUG	Completed startup sequence
+1478254489580	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1478254489581	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1478254489581	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1478254490131	DeferredSave.extensions.json	DEBUG	Write succeeded
+1478254490131	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1478254490131	DeferredSave.extensions.json	DEBUG	Starting timer
+1478254490144	addons.repository	DEBUG	No addons.json found.
+1478254490145	DeferredSave.addons.json	DEBUG	Save changes
+1478254490149	DeferredSave.addons.json	DEBUG	Starting timer
+1478254490218	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1478254490218	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1478254490218	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1478254490223	DeferredSave.extensions.json	DEBUG	Starting write
+1478254490224	DeferredSave.addons.json	DEBUG	Starting write
+1478254490270	DeferredSave.extensions.json	DEBUG	Write succeeded
+1478254490274	DeferredSave.addons.json	DEBUG	Write succeeded
+1478254501252	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.3
+1478254501255	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.4
+1478254501260	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.0
+1478254501260	addons.xpi	DEBUG	Calling bootstrap method shutdown on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 8.3.0.9150
+[Child 3056] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1478254501504	addons.manager	DEBUG	shutdown
+1478254501504	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1478254501504	addons.xpi	DEBUG	shutdown
+1478254501504	addons.xpi-utils	DEBUG	shutdown
+1478254501505	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1478254501505	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1478254501508	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1478254501509	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1478254501510	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1478254501513	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1478254501516	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;ASDP1513PO01976&apos;, ip: &apos;10.0.31.248&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:125)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:124)
+	at com.qait.automation.WebDriverFactory.getFirefoxDriver(WebDriverFactory.java:96)
+	at com.qait.automation.WebDriverFactory.getDriver(WebDriverFactory.java:31)
+	at com.qait.automation.TestSessionInitiator._configureBrowser(TestSessionInitiator.java:78)
+	at com.qait.automation.TestSessionInitiator.testInitiator(TestSessionInitiator.java:73)
+	at com.qait.automation.TestSessionInitiator.&lt;init&gt;(TestSessionInitiator.java:68)
+	at com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.Start_Test_Session(TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+29	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.4
+1478254488431	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1478254488432	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1478254488432	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1478254488433	addons.xpi	DEBUG	Calling bootstrap method startup on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 8.3.0.9150
+1478254488444	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1478254488445	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1478254488445	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1478254488445	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1478254488445	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1478254488446	addons.manager	DEBUG	Starting provider: GMPProvider
+1478254488454	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1478254488454	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1478254488454	addons.manager	DEBUG	Starting provider: PluginProvider
+1478254488455	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1478254488455	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1478254488456	addons.manager	DEBUG	Completed startup sequence
+1478254489580	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1478254489581	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1478254489581	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1478254490131	DeferredSave.extensions.json	DEBUG	Write succeeded
+1478254490131	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1478254490131	DeferredSave.extensions.json	DEBUG	Starting timer
+1478254490144	addons.repository	DEBUG	No addons.json found.
+1478254490145	DeferredSave.addons.json	DEBUG	Save changes
+1478254490149	DeferredSave.addons.json	DEBUG	Starting timer
+1478254490218	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1478254490218	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1478254490218	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1478254490223	DeferredSave.extensions.json	DEBUG	Starting write
+1478254490224	DeferredSave.addons.json	DEBUG	Starting write
+1478254490270	DeferredSave.extensions.json	DEBUG	Write succeeded
+1478254490274	DeferredSave.addons.json	DEBUG	Write succeeded
+1478254501252	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.3
+1478254501255	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.4
+1478254501260	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.0
+1478254501260	addons.xpi	DEBUG	Calling bootstrap method shutdown on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 8.3.0.9150
+[Child 3056] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1478254501504	addons.manager	DEBUG	shutdown
+1478254501504	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1478254501504	addons.xpi	DEBUG	shutdown
+1478254501504	addons.xpi-utils	DEBUG	shutdown
+1478254501505	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1478254501505	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1478254501508	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1478254501509	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1478254501510	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1478254501513	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1478254501516	addons.manager	DEBUG	Async provider shutdown done
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	... 36 more
+</pre></div></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.handleTestMethodName()'><b>handleTestMethodName</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.handleTestMethodName()'><b>handleTestMethodName</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.handleTestMethodName()'><b>handleTestMethodName</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.handleTestMethodName()'><b>handleTestMethodName</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.handleTestMethodName()'><b>handleTestMethodName</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.handleTestMethodName()'><b>handleTestMethodName</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.handleTestMethodName()'><b>handleTestMethodName</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.handleTestMethodName()'><b>handleTestMethodName</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.handleTestMethodName()'><b>handleTestMethodName</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.handleTestMethodName()'><b>handleTestMethodName</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.handleTestMethodName()'><b>handleTestMethodName</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.take_screenshot_on_failure()'><b>take_screenshot_on_failure</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.take_screenshot_on_failure()'><b>take_screenshot_on_failure</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.take_screenshot_on_failure()'><b>take_screenshot_on_failure</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.take_screenshot_on_failure()'><b>take_screenshot_on_failure</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.take_screenshot_on_failure()'><b>take_screenshot_on_failure</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.take_screenshot_on_failure()'><b>take_screenshot_on_failure</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.take_screenshot_on_failure()'><b>take_screenshot_on_failure</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.take_screenshot_on_failure()'><b>take_screenshot_on_failure</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.take_screenshot_on_failure()'><b>take_screenshot_on_failure</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.take_screenshot_on_failure()'><b>take_screenshot_on_failure</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.take_screenshot_on_failure()'><b>take_screenshot_on_failure</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.close_Test_Session()'><b>close_Test_Session</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.TestStep10_VerifyingPinCode()'><b>TestStep10_VerifyingPinCode</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.TestStep1_VerifyTitleOfThePage()'><b>TestStep1_VerifyTitleOfThePage</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.TestStep2_SearchProduct()'><b>TestStep2_SearchProduct</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.TestStep2_VerifyingSignInButton()'><b>TestStep2_VerifyingSignInButton</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.TestStep3_VerifySearchResult()'><b>TestStep3_VerifySearchResult</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.TestStep3_VerifyingCartIsPresent()'><b>TestStep3_VerifyingCartIsPresent</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.TestStep4_SelectFirstProduct()'><b>TestStep4_SelectFirstProduct</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.TestStep5_AddProductToCart()'><b>TestStep5_AddProductToCart</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.TestStep6_AddToCompare()'><b>TestStep6_AddToCompare</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.TestStep7_VerifyCart()'><b>TestStep7_VerifyCart</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+<tr>
+<td title='com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented.TestStep9_VerifyingBuyNowIsDisplayed()'><b>TestStep9_VerifyingBuyNowIsDisplayed</b><br>Test class: com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented</td>
+<td></td>
+<td>0</td>
+<td>com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented@91161c7</td></tr>
+</table><p>
+</body>
+</html>

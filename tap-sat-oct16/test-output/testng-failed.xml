@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented">
+        <methods>
+          <include name="Start_Test_Session"/>
+          <include name="TestStep4_SelectFirstProduct"/>
+          <include name="TestStep9_VerifyingBuyNowIsDisplayed"/>
+          <include name="TestStep10_VerifyingPinCode"/>
+          <include name="TestStep1_VerifyTitleOfThePage"/>
+          <include name="TestStep6_AddToCompare"/>
+          <include name="TestStep2_SearchProduct"/>
+          <include name="TestStep3_VerifySearchResult"/>
+          <include name="TestStep5_AddProductToCart"/>
+          <include name="TestStep3_VerifyingCartIsPresent"/>
+          <include name="TestStep7_VerifyCart"/>
+          <include name="TestStep2_VerifyingSignInButton"/>
+        </methods>
+      </class> <!-- com.qait.demo.tests.TestLevel2_GenericEcommerseSiteTest_Stubs_Written_Method_Needs_To_Be_Implemented -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
